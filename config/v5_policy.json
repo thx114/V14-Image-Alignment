@@ -1,0 +1,42 @@
+{
+  "version": "pyramid-v5",
+  "ids": [
+    2,
+    8
+  ],
+  "development": 2,
+  "fixed_new_image": 8,
+  "fit_grid": "margin72 step16; excludes eval centers by8px per axis",
+  "eval_grid": "margin80 step32; evaluator unchanged",
+  "global": "SIFT12000 ratio.72 partialAffine RANSAC2px 10000iter; spatial eval exclusion8px",
+  "scales": [
+    0.125,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "DIS": "MEDIUM finestScale0 spatial propagation; resized previous flow initialized at every scale",
+  "representation": "CLAHE clip2 tiles16x16, output remains unfiltered original color target",
+  "cycle_gate_px": 1.5,
+  "texture_std_min": 3,
+  "residual_max_px": 24,
+  "local_median_consistency_max_px": 2.5,
+  "weight": "exp(-(cycle/1.5)^2) * (.15+.85*edge)",
+  "interpolation": "Gaussian(weight*residual)/Gaussian(weight), sigma24 kernel145; support40 smoothstep24to40; border64to96",
+  "alpha": 1,
+  "geometry": "reject det<.05 or additional support loss; preserve rejected map; no alpha search",
+  "coordinates": "native current-root source to current-root target; x column y row integer centers",
+  "exports": "one flow correspondence per source row; global affine provenance separate, never double count",
+  "goals": {
+    "full_image_strict_less_px": 2,
+    "character_edge_strict_less_px": 1.5,
+    "semantic_protection": "UNKNOWN; no access to parent contour eval"
+  },
+  "resources": {
+    "cpu": 2,
+    "gpu": 0,
+    "child_seconds": 85,
+    "private_mib": 900
+  },
+  "bound_files": {}
+}

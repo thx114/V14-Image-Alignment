@@ -1,0 +1,10 @@
+{
+  "coordination/train2_v14_1280_20261027/pipeline.py": "bf502d96c4929d96551dd142d35a412482f5a2b248273e985b67ca40dd100a23",
+  "coordination/train2_v14_1280_20261027/v12_size.py": "e24500f40b90e8cb7da712c72d18873ce1c9973fe7c77e68bc9e2fff0ddfed75",
+  "coordination/train2_v14_1280_20261027/verify_post.py": "34476c0c62ea8e1f5a53c1f79c32d16c4950f963e2b4338569d3266aaa4f1241",
+  "coordination/v14_full_raw_current_20261024/pipeline.py": "908fce458e54ce52d9983ac3906ced42340287acd9861a51abdb1261a92b6d5a",
+  "research/current_chat_flow_pyramid_v5_20261024/run.py": "12858cbec796a26aefc13dac98cb75de6eb74924ccd2494c2e1f381d5c170480",
+  "research/current_chat_flow_boundary_v12_directional_20261024/run.py": "d15495c3f93c592eb5d1bf585518036a2403de9944a3f2ab44bd7aad9b4e4be9",
+  "research/current_chat_foot_local_v14_20261024/multi_image.py": "597043a1941076a32fc524a2b4f5ab7d08fe627f1d0033513616804cc1dfee94",
+  "research/current_chat_flow_real_v2_detail_20261024/detail_residual_v2.py": "5a4bc87cd10a670836fdb74ae4f8f1c17fd3d9f1ac1e1c168daca152b1cc1971"
+}
